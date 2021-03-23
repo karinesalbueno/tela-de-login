@@ -1,0 +1,100 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;}
+
+.login {
+	height: 100vh;
+	background: linear-gradient(120deg, #7a49a5, #00ffff);
+	background-size: 200%;
+	display:flex;
+	justify-content: center;	
+	align-items: center;
+}
+
+.login_container {
+/* altura*/
+	min-height: 400px;
+/* tamanho por dentro*/
+	width: 300px;
+	background-color: #ffffff;	
+/* borda branca (caixa branca)*/
+	box-sizing: border-box;
+/* tamanho do px dentro da caixa branca*/
+	padding: 32px;
+/* borda arredondada*/
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.login_tittle {
+/* distancia do titulo p/ a caixa de email*/
+	margin-bottom: 32px;
+	color: #303030;
+}
+
+.login_form {
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_input {
+
+	height: 48px;
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 8px;
+/* deixa a caixa de login transparente*/			
+	border: unset;
+	outline: none;
+}
+
+.login_input-border {
+height: 1px;
+width: 100%;
+margin-bottom: 16px;
+background-color: #cfcfcf;
+/*segundos das caixas*/
+transition: .3s ease-in-out;
+}
+
+.login_input-border ::after {
+	content: '';
+	display: block;
+	height: 1px;
+	width: 0;
+	margin-bottom: 16px;
+	background: linear-gradient(120deg, #E75590, #00C2CB);
+	transition: .3s ease-in-out;
+}
+
+.login_submit {
+	height: 48px;
+	width: 100%;
+	outline: none;
+	background: linear-gradient(120deg, #7a49a5, #00ffff, #7a49a5);
+	/* tamanho da cor dentro da caixinha de acesso */
+	background-size: 100%;
+	margin-bottom: 32px ;
+	color: #4974a5;
+	font-size: 16px;
+	font-weight: bold;
+	border: unset;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+
+.login_reset {
+	/* tamanho da fonte*/
+	font-size: 13px;
+	color: #929292;
+	text-decoration: none;
+
+
+}
